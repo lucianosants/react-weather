@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
+import { Container } from './styled';
 
 export default function Layout() {
 	return (
-		<div>
-			<h1>REACT WEATHER</h1>
-		</div>
+		<Container>
+			<h2>Testando</h2>
+		</Container>
 	);
 }
