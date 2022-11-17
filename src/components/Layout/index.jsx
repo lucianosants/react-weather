@@ -1,9 +1,10 @@
-import { Container } from './styled';
+import SideMenu from './components/SideMenu';
+import { StyledContainer } from './styled';
 
 export default function Layout() {
 	return (
-		<Container>
-			<h2>Testando</h2>
-		</Container>
+		<StyledContainer>
+			<SideMenu />
+		</StyledContainer>
 	);
 }

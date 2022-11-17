@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.main`
+export const StyledContainer = styled.main`
 	background: ${({ theme }) => theme.BG_L1};
 	color: ${({ theme }) => theme.TEXT_L1};
 	border-radius: 12px;
