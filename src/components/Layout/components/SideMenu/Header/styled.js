@@ -8,7 +8,6 @@ export const StyledHeader = styled.header`
 
 export const StyledBall = styled.span`
 	background-color: ${({ bgColor }) => bgColor};
-	padding: 0.1rem;
 	margin-right: 1.5rem;
 	clip-path: circle();
 	padding: 0.6rem;
@@ -18,11 +17,13 @@ export const StyledBall = styled.span`
 export const StyledBrand = styled.div`
 	display: flex;
 	justify-content: space-between;
-	font-size: 2.6rem;
 	align-items: center;
 	margin-top: 3rem;
 
 	h1 {
 		text-transform: uppercase;
+		color: ${({ theme }) => theme.TEXT_L1};
+		font-size: 2.6rem;
+		letter-spacing: 0.1rem;
 	}
 `;
