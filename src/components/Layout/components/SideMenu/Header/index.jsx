@@ -1,4 +1,4 @@
-import Logo from '../../../../../../public/Logo';
+import Logo from './Logo';
 import { StyledHeader, StyledBall, StyledBrand } from './styled';
 
 export default function Header() {
