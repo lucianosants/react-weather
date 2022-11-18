@@ -1,7 +1,9 @@
+import { StyledSideMenu } from './styled';
+
 import Header from './Header';
 import Search from './Search';
-import { StyledSideMenu } from './styled';
 import Suggestions from './Suggestions';
+import ToggleTheme from './ToggleTheme';
 
 export default function SideMenu() {
 	return (
@@ -9,6 +11,7 @@ export default function SideMenu() {
 			<Header />
 			<Search />
 			<Suggestions />
+			<ToggleTheme />
 		</StyledSideMenu>
 	);
 }
