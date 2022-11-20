@@ -34,7 +34,7 @@ export const GlobalStyles = createGlobalStyle`
         flex: 1;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     
     body {
