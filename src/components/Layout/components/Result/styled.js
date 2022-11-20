@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StyledResult = styled.section`
 	background-color: ${({ bg }) => bg};
+	color: ${({ theme }) => theme.TEXT_L1};
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -22,14 +23,11 @@ export const StyledLocation = styled.div`
 	}
 `;
 
-export const StyledDate = styled.div`
-	margin-bottom: 1.8rem;
-`;
-
 export const StyledWeather = styled.div`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	margin-bottom: 1.8rem;
 
 	div {
 		display: flex;
@@ -45,6 +43,10 @@ export const StyledWeather = styled.div`
 			font-size: 1.8rem;
 		}
 	}
+	p {
+		font-size: 2.2rem;
+		color: ${({ theme }) => theme.TEXT_L2};
+	}
 `;
 
 export const StyledMax_Min = styled.div`
@@ -57,5 +59,13 @@ export const StyledMax_Min = styled.div`
 		margin-top: 1.8rem;
 		color: ${({ theme }) => theme.TEXT_L2};
 		font-weight: 600;
+
+		display: flex;
+		align-items: center;
+
+		span {
+			display: flex;
+			align-items: center;
+		}
 	}
 `;
