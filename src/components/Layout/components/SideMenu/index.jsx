@@ -6,11 +6,15 @@ import Suggestions from './Suggestions';
 import ToggleTheme from './ToggleTheme';
 import Footer from './Footer';
 
-export default function SideMenu() {
+export default function SideMenu({ onHandleSubmit, query, setQuery }) {
 	return (
 		<StyledSideMenu>
 			<Header />
-			<Search />
+			<Search
+				onHandleSubmit={onHandleSubmit}
+				query={query}
+				setQuery={setQuery}
+			/>
 			<Suggestions />
 			<ToggleTheme />
 			<Footer />

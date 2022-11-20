@@ -6,11 +6,17 @@ import Result from './components/Result';
 import SideMenu from './components/SideMenu';
 
 export default function Layout() {
-	const [query, setQuery] = useState('sao paulo');
+	const [search, setSearch] = useState('são paulo');
+	const [query, setQuery] = useState('');
 	const [data, setData] = useState([]);
 
 	const API_KEY = import.meta.env.VITE_API_KEY;
-	const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&appid=${API_KEY}`;
+	const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=${API_KEY}`;
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		setSearch(query);
+	};
 
 	useEffect(() => {
 		const getWeather = async () => {
@@ -22,11 +28,15 @@ export default function Layout() {
 		};
 
 		getWeather();
-	}, []);
+	}, [search]);
 
 	return (
 		<StyledContainer>
-			<SideMenu />
+			<SideMenu
+				query={query}
+				onHandleSubmit={(e) => handleSubmit(e)}
+				setQuery={setQuery}
+			/>
 			<Result data={data} />
 		</StyledContainer>
 	);
