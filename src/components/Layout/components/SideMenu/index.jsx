@@ -6,7 +6,12 @@ import Suggestions from './Suggestions';
 import ToggleTheme from './ToggleTheme';
 import Footer from './Footer';
 
-export default function SideMenu({ onHandleSubmit, query, setQuery }) {
+export default function SideMenu({
+	onHandleSubmit,
+	query,
+	setQuery,
+	onHandleAdd,
+}) {
 	return (
 		<StyledSideMenu>
 			<Header />
@@ -15,7 +20,7 @@ export default function SideMenu({ onHandleSubmit, query, setQuery }) {
 				query={query}
 				setQuery={setQuery}
 			/>
-			<Suggestions />
+			<Suggestions onHandleAdd={onHandleAdd} />
 			<ToggleTheme />
 			<Footer />
 		</StyledSideMenu>

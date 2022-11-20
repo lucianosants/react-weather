@@ -18,6 +18,11 @@ export default function Layout() {
 		setSearch(query);
 	};
 
+	const HandleAdd = (e) => {
+		setQuery(e.target.value);
+		setSearch(e.target.value);
+	};
+
 	useEffect(() => {
 		const getWeather = async () => {
 			await fetch(url)
@@ -36,6 +41,7 @@ export default function Layout() {
 				query={query}
 				onHandleSubmit={(e) => handleSubmit(e)}
 				setQuery={setQuery}
+				onHandleAdd={(e) => HandleAdd(e)}
 			/>
 			<Result data={data} />
 		</StyledContainer>
