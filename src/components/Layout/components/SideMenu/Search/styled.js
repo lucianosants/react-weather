@@ -22,6 +22,10 @@ export const StyledSearch = styled.form`
 			color: ${({ theme }) => theme.TEXT_L2};
 		}
 
+		&:focus {
+			background-color: ${({ theme }) => theme.BG_L1};
+		}
+
 		&:-webkit-autofill {
 			border: 1px solid ${({ theme }) => theme.BG_L2};
 			-webkit-box-shadow: 0 0 0px 1000px ${({ theme }) => theme.BG_L3}
@@ -41,7 +45,8 @@ export const StyledSearch = styled.form`
 			fill: ${({ theme }) => theme.TEXT_L1};
 		}
 
-		&:hover {
+		&:hover,
+		&:focus {
 			filter: brightness(1.2);
 		}
 	}
