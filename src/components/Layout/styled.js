@@ -5,7 +5,8 @@ export const StyledContainer = styled.main`
 	color: ${({ theme }) => theme.TEXT_L1};
 	border-radius: 12px;
 	width: 90%;
+	display: flex;
 	max-width: 126rem;
-	padding: 2rem 3rem;
 	box-shadow: 0px 0px 65px rgba(0, 0, 0, 0.5);
+	overflow-x: hidden;
 `;
