@@ -14,6 +14,7 @@ import drizzle from '../../../../assets/drizzle.svg';
 import rain from '../../../../assets/rain.svg';
 import snow from '../../../../assets/snow.svg';
 import clear from '../../../../assets/clear.svg';
+import mist from '../../../../assets/mist.svg';
 
 export default function Result({ data }) {
 	let currentIcon;
@@ -24,6 +25,7 @@ export default function Result({ data }) {
 		if (data.weather[0].main === 'Rain') currentIcon = rain;
 		if (data.weather[0].main === 'Snow') currentIcon = snow;
 		if (data.weather[0].main === 'Clear') currentIcon = clear;
+		if (data.weather[0].main === 'Mist') currentIcon = mist;
 	}
 
 	return (
