@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
         --dark-text-2: #989BAC;
         
         // light theme
-        --light-bg1: #FFFFFF;
+        --light-bg-1: #FFFFFF;
         --light-bg-2: #CECECE;
         --light-bg-3: #E9E9E9;
         --light-text-1: #181A2F;
