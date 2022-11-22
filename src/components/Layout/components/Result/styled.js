@@ -66,6 +66,11 @@ export const StyledMax_Min = styled.div`
 		border-radius: 7px;
 		width: 100%;
 		text-align: center;
+
+		.description__main {
+			font-weight: 700;
+			font-size: 1.8rem;
+		}
 	}
 
 	.max__min {

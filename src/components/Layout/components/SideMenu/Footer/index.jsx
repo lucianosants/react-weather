@@ -11,12 +11,17 @@ export default function Footer() {
 			</p>
 
 			<StyledLinksFooter>
-				<a href='https://github.com/lucianosants' target='_blank'>
+				<a
+					href='https://github.com/lucianosants'
+					target='_blank'
+					aria-label='Link to Github'
+				>
 					<AiOutlineGithub size={24} />
 				</a>
 				<a
 					href='https://www.linkedin.com/in/lucianosants/'
 					target='_blank'
+					aria-label='Link to Linkedin'
 				>
 					<AiOutlineLinkedin size={24} />
 				</a>

@@ -55,7 +55,9 @@ export default function Result({ data }) {
 			<StyledMax_Min>
 				{data.weather && (
 					<div className='description'>
-						<h4>{data.weather[0].main}</h4>
+						<p className='description__main'>
+							{data.weather[0].main}
+						</p>
 						<p>{data.weather[0].description}</p>
 					</div>
 				)}

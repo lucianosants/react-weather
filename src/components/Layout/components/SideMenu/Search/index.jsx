@@ -13,7 +13,7 @@ export default function Search({ onHandleSubmit, query, setQuery }) {
 				placeholder='Enter city...'
 				autoComplete='off'
 			/>
-			<button type='submit'>
+			<button type='submit' aria-label='Search for the city'>
 				<AiOutlineSearch size={26} />
 			</button>
 		</StyledSearch>
