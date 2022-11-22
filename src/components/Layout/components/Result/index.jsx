@@ -18,6 +18,7 @@ import mist from '../../../../assets/mist.svg';
 
 export default function Result({ data }) {
 	let currentIcon;
+
 	if (data.weather) {
 		if (data.weather[0].main === 'Clouds') currentIcon = cloud;
 		if (data.weather[0].main === 'Thunderstorm') currentIcon = thunderstorm;
@@ -29,7 +30,7 @@ export default function Result({ data }) {
 	}
 
 	return (
-		<StyledResult bg={'#43033c'}>
+		<StyledResult>
 			<StyledLocation>
 				<FaMapMarkerAlt size={26} />
 				<h2>{data.name}</h2>

@@ -19,6 +19,7 @@ export const GlobalStyles = createGlobalStyle`
         --dark-bg-3: #191C30;
         --dark-text-1: #FCFFFF;
         --dark-text-2: #989BAC;
+        --dark-bg-result: linear-gradient(360deg,#187cb1 0%,#3c407b 100%);
         
         // light theme
         --light-bg-1: #FFFFFF;
@@ -26,6 +27,7 @@ export const GlobalStyles = createGlobalStyle`
         --light-bg-3: #E9E9E9;
         --light-text-1: #181A2F;
         --light-text-2: #8A8A8A;
+        --light-bg-result: linear-gradient(360deg,#f4e1ab 0%,#fac580 100%);
     }
 
     html, body, #root, .App {

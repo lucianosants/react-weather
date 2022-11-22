@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledResult = styled.section`
-	background-color: ${({ bg }) => bg};
+	background-image: ${({ theme }) => theme.BG_L4};
+
 	color: ${({ theme }) => theme.TEXT_L1};
 	width: 100%;
 	display: flex;
