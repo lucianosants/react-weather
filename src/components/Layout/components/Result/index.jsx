@@ -8,13 +8,13 @@ import {
 	StyledWeather,
 } from './styled';
 
-import cloud from '../../../../assets/cloud.svg';
-import thunderstorm from '../../../../assets/thunderstorm.svg';
-import drizzle from '../../../../assets/drizzle.svg';
-import rain from '../../../../assets/rain.svg';
-import snow from '../../../../assets/snow.svg';
-import clear from '../../../../assets/clear.svg';
-import mist from '../../../../assets/mist.svg';
+import cloud from '/icons/cloud.svg';
+import thunderstorm from '/icons/thunderstorm.svg';
+import drizzle from '/icons/drizzle.svg';
+import rain from '/icons/rain.svg';
+import snow from '/icons/snow.svg';
+import clear from '/icons/clear.svg';
+import mist from '/icons/mist.svg';
 
 export default function Result({ data }) {
 	let currentIcon;
