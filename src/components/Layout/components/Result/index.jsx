@@ -54,10 +54,10 @@ export default function Result({ data }) {
 
 			<StyledMax_Min>
 				{data.weather && (
-					<>
+					<div className='description'>
 						<h4>{data.weather[0].main}</h4>
 						<p>{data.weather[0].description}</p>
-					</>
+					</div>
 				)}
 
 				{data.main && (
@@ -66,7 +66,7 @@ export default function Result({ data }) {
 							<BsThermometerHigh />
 							{data.main.temp_max.toFixed()}&deg;C
 						</span>
-						<span> | </span>
+
 						<span>
 							<BsThermometerLow />
 							{data.main.temp_min.toFixed()}&deg;C

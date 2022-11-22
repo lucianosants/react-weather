@@ -17,17 +17,19 @@ export const GlobalStyles = createGlobalStyle`
         --dark-bg-1: #1D2138;
         --dark-bg-2: #2A3154;
         --dark-bg-3: #191C30;
+        --dark-bg-4: linear-gradient(360deg,#187cb1 0%,#3c407b 100%);
+        --dark-bg-5: rgba(4, 48, 110, 0.5);
         --dark-text-1: #FCFFFF;
         --dark-text-2: #989BAC;
-        --dark-bg-result: linear-gradient(360deg,#187cb1 0%,#3c407b 100%);
         
         // light theme
         --light-bg-1: #FFFFFF;
         --light-bg-2: #CECECE;
         --light-bg-3: #E9E9E9;
+        --light-bg-4: linear-gradient(360deg,#f4e1ab 0%,#fac580 100%);
+        --light-bg-5: rgba(255, 255, 255, 0.6);
         --light-text-1: #181A2F;
         --light-text-2: #8A8A8A;
-        --light-bg-result: linear-gradient(360deg,#f4e1ab 0%,#fac580 100%);
     }
 
     html, body, #root, .App {

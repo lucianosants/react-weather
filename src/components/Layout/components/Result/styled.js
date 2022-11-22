@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const StyledResult = styled.section`
 	background-image: ${({ theme }) => theme.BG_L4};
@@ -44,9 +44,13 @@ export const StyledWeather = styled.div`
 			font-size: 1.8rem;
 		}
 	}
+
 	p {
 		font-size: 2.2rem;
-		color: ${({ theme }) => theme.TEXT_L2};
+		color: ${({ theme }) => theme.TEXT_L1};
+		background-color: ${({ theme }) => theme.BG_L5};
+		padding: 1rem 1.3rem;
+		border-radius: 7px;
 	}
 `;
 
@@ -56,17 +60,30 @@ export const StyledMax_Min = styled.div`
 	align-items: center;
 	justify-content: center;
 
+	.description {
+		background-color: ${({ theme }) => theme.BG_L5};
+		padding: 1rem 1.3rem;
+		border-radius: 7px;
+		width: 100%;
+		text-align: center;
+	}
+
 	.max__min {
 		margin-top: 1.8rem;
-		color: ${({ theme }) => theme.TEXT_L2};
+		color: ${({ theme }) => theme.TEXT_L1};
 		font-weight: 600;
 
 		display: flex;
 		align-items: center;
+		gap: 19px;
 
 		span {
 			display: flex;
 			align-items: center;
+
+			background-color: ${({ theme }) => theme.BG_L5};
+			padding: 1rem 1.3rem;
+			border-radius: 7px;
 		}
 	}
 `;
