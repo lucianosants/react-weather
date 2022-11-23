@@ -36,6 +36,7 @@ export default function Result({ data }) {
 				<h2>{data.name}</h2>
 			</StyledLocation>
 
+			{data.cod === '404' && <p>We can't found the city.</p>}
 			{data.main && (
 				<StyledWeather>
 					<img src={currentIcon} alt='Icon relative to condition' />
