@@ -51,4 +51,8 @@ export const StyledToggleTheme = styled.div`
 	input[type='checkbox']:checked + label:before {
 		transform: translateX(90%);
 	}
+
+	@media (max-width: 665px) {
+		margin-top: 1.8rem;
+	}
 `;

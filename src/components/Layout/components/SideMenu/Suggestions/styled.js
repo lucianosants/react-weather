@@ -8,6 +8,10 @@ export const StyledSuggestions = styled.article`
 		margin: 2.8rem 0;
 		font-size: 2.2rem;
 	}
+
+	@media (max-width: 665px) {
+		display: none;
+	}
 `;
 
 export const StyledContent = styled.div`

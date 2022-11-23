@@ -17,4 +17,13 @@ export const StyledBrand = styled.div`
 		font-size: 2.6rem;
 		letter-spacing: 0.1rem;
 	}
+
+	@media (max-width: 1020px) {
+		svg {
+			width: 8rem;
+		}
+		h1 {
+			font-size: 2rem;
+		}
+	}
 `;
